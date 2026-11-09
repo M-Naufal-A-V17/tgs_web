@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Form HTML</title>
+</head>
+<body>
+    <h2>Form Pendaftaran</h2>
+    <form action="/proses.php" method="POST">
+        <p>
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama..." required>
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+        </p>
+        <p>
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="pria" name="jk" value="L"> <label for="pria">Laki-laki</label>
+            <input type="radio" id="wanita" name="jk" value="P"> <label for="wanita">Perempuan</label>
+        </p>
+        <p>
+            <label for="agama">Agama:</label><br>
+            <select id="agama" name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="katolik">Katolik</option>
+                <option value="hindu">Hindu</option>
+                <option value="buddha">Buddha</option>
+            </select>
+        </p>
+        <p>
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan" rows="4" cols="30"></textarea>
+        </p>
+        <p>
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+</body>
+</html>
